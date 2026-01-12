@@ -7,21 +7,27 @@
 - 集成 VSCodium 开发环境。
 - 支持中文语言环境。
 
-## 镜像构建
+## 获取镜像方式一：下载镜像压缩包（国内用户推荐）
 
-git clone https://github.com/AI-Robot-Book-Humble/docker-ros2-desktop-ai-robot-book-humble
-cd docker-ros2-desktop-ai-robot-book-humble
+https://gitee.com/jupiterobot/docker-ros2-desktop-ai-robot-book-humble-zh
+
+## 获取镜像方式二：镜像构建
+
+终端进入此目录运行
+
 ./build.bash
 
-## 镜像发布地址
+## 获取镜像方式三：docker官网拉取镜像
 
-https://hub.docker.com/repository/docker/airobotbook/ros2-desktop-ai-robot-book-humble
+docker pull humble911/ros2-desktop-ai-robot-book:humble-zh
+
+## 查看镜像
+
+docker images
+
+# 运行
 
 ## 在 Linux 上运行
-
-### 获取镜像
-
-./arb-pull.bash
 
 ### 启动容器
 
@@ -29,9 +35,7 @@ https://hub.docker.com/repository/docker/airobotbook/ros2-desktop-ai-robot-book-
 
 如要使用GPU
 
-```
 ./arb-run.bash --gpus all
-```
 
 可以通过浏览器访问就表示成功，之后可以通过以下指令启动docker容器
 
@@ -53,25 +57,19 @@ docker start ai_robot_book
 
 ## 在 Windows 上运行
 
-### 获取镜像
-
-arb-pull.bat
-
 ### 启动容器
 
 windows终端之前运行下面的指令无法访问音频设备（不能语音识别与合成）
 
 arb-run.bat
 
-若需要在windows下运行且需要用到音频设备，可以安装WSL虚拟ubuntu再运行以下指令
+若需要在windows下运行且需要用到音频设备，需要安装WSL虚拟ubuntu再到ubuntu终端运行以下指令
 
 arb-run-win.bash
 
 如要使用GPU
 
-```
 arb-run.bat --gpus all
-```
 
 可以通过浏览器访问就表示成功，之后可以通过以下指令启动docker容器
 
@@ -95,7 +93,7 @@ arb-commit.bat
 
 （暂无内容）
 
-## 作者
+## 作者（日语原版）
 
 升谷 保博
 

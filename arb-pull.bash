@@ -1,6 +1,6 @@
 #!/bin/bash
-ORIGINAL_IMAGE=airobotbook/ros2-desktop-ai-robot-book-humble:latest
-MY_IMAGE=ros2-desktop-ai-robot-book-humble:mine
+ORIGINAL_IMAGE=humble911/ros2-desktop-ai-robot-book:humble-zh
+MY_IMAGE=ros2-desktop-ai-robot-book-humble-zh:mine
 ID=$(docker image ls -q $ORIGINAL_IMAGE)
 if [ -z "$ID" ]; then
     docker pull $ORIGINAL_IMAGE

@@ -1,7 +1,7 @@
 @echo off
 setlocal
-set ORIGINAL_IMAGE=airobotbook/ros2-desktop-ai-robot-book-humble:zh
-set MY_IMAGE=ros2-desktop-ai-robot-book-humble:zh
+set ORIGINAL_IMAGE=humble911/ros2-desktop-ai-robot-book:humble-zh
+set MY_IMAGE=ros2-desktop-ai-robot-book-humble-zh:mine
 for /f "usebackq" %%A in (`docker image ls -q %ORIGINAL_IMAGE%`) do set ID=%%A
 if [%ID%] == [] (
     docker pull %ORIGINAL_IMAGE%
