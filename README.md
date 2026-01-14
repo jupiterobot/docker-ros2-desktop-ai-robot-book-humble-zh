@@ -9,7 +9,9 @@
 
 ## 获取镜像方式一：下载镜像压缩包（国内用户推荐）
 
-https://gitee.com/jupiterobot/docker-ros2-desktop-ai-robot-book-humble-zh
+进入木星机器人云服务器，密码：robo
+
+https://cloud.jupiterobot.com:5001/sharing/UteRjvIZQ
 
 ## 获取镜像方式二：镜像构建
 
